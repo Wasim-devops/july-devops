@@ -10,7 +10,7 @@ https://github.com/Wasim-devops/july-devops.git
 }
 stage('build && Sonarqube analysis'){
   steps {
-  withsonarqubeEnv('sonar'){
+  withSonarQubeEnv('sonar'){
   withMaven(maven:'localMaven') {
   sh'mvn clean package sonar:sonar'
   }

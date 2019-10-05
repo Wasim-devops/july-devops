@@ -3,7 +3,7 @@ agent any
 stages
 {
 stage ('SCM checkout'){
-https://github.com/Wasim-devops/july-devops.git
+git 'https://github.com/Wasim-devops/july-devops.git'
 
 }
 }

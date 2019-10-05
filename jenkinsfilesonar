@@ -4,10 +4,14 @@ pipeline
 	agent any
 	stages
 	{
+	 steps
+	 {
+	 
 		stage ('SCM checkout')
 		{
 			git 'https://github.com/Wasim-devops/july-devops.git'
 		}
+	 }	
 	}
 
 	stage('build && Sonarqube analysis')
